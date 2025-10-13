@@ -52,3 +52,18 @@
     justify-content: center;
 
 }
+
+
+.cards-container{
+    grid-template-columns: repeat(auto-fill, 320px);
+}
+.product-card{
+            width: 320px;
+        }
+        .product-card img{
+            width: 320px;
+            height: 320px;
+        }
+.product-info div p:nth-child(1){
+    font-size: 1.8rem;
+}
