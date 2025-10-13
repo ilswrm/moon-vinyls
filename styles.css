@@ -5,6 +5,10 @@
 4.Visuales
 5.Otros
 */
+
+/* =====================================
+RESET / VARIABLES / FUENTES
+===================================== */
 :root{
     --very-light-grey:#C7C7C7;
     --white:#FFFFFF;
@@ -22,6 +26,9 @@ html{
     font-size: 62.5%;
     font-family: 'Quicksand', sans-serif;
 }
+/* =====================================
+HEADER / NAVBAR
+===================================== */
 nav{
     display: flex;
     justify-content: space-between;
@@ -38,13 +45,10 @@ nav{
 .logo{
     width: auto;
     height: 40px;
-    object-fit: cover;
-            
+    object-fit: cover;           
 }
 .menu-items{
     font-size: 1.4rem;
-    
-
 }
 .navbar-left ul,
 .navbar-right ul{
@@ -52,8 +56,7 @@ nav{
 }
 .navbar-left{
     display: flex;
-    gap: 2rem;
-            
+    gap: 2rem;         
 }
 .navbar-left ul{
     display: none; /* oculto por defecto */
@@ -72,7 +75,6 @@ nav{
     margin-left: 10px;
     list-style: none;
 }
-
 .navbar-left ul.active {
     display: flex;
 }
@@ -89,8 +91,7 @@ nav{
     padding: 12px;
 }
 .navbar-left ul li a:hover,
-.navbar-right ul li a:hover{
-            
+.navbar-right ul li a:hover{         
     color: var(--light-green);
     border: 2px solid var(--light-green);
     font-weight: 600;
@@ -108,7 +109,6 @@ nav{
     display: flex;
     align-items: center;
     position:relative;
-
 }
 .navbar-user div{
     width: 14px;
@@ -127,8 +127,10 @@ nav{
 .navbar-user img{
     height: 20px;
 }
-
-header{
+/* =====================================
+HERO (solo index.html)
+===================================== */
+.hero{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -138,9 +140,9 @@ header{
     height: 334px;
     text-align: center;
     background: #ACD9B2;
-background: linear-gradient(0deg, rgba(172, 217, 178, 1) 0%, rgba(220, 255, 217, 1) 100%);
+    background: linear-gradient(0deg, rgba(172, 217, 178, 1) 0%, rgba(220, 255, 217, 1) 100%);
 }
-header img{
+.hero img{
     height: auto;
     width: 120px;
     align-self: center;
@@ -195,10 +197,12 @@ header img{
     background-image: url('./assets/logos/flechita.svg');
     align-self: center;
 }
+/* =====================================
+CONTENEDOR IMAGEN/VIDEO HEADER
+===================================== */
 main{
     width: 100%;
     height: auto;
-    background-color: var(--text-input-field);
 }
 .main--gallery-container{
     width: 100%;
@@ -221,7 +225,6 @@ main{
 .img-container{
     overflow: hidden;
 }
-
 .img-container img {
     position: absolute;
     top: 0;
@@ -237,6 +240,9 @@ main{
     height: 100%;
     object-fit: cover;
 }
+/* =====================================
+CARRUSEL IMAGENES
+===================================== */
 .main--gallery-container--title h2{
     margin-bottom: 30px;
     font-size: 2rem;
@@ -249,7 +255,6 @@ main{
     line-height: 1.4rem;
     color: var(--dark);
 }
-
 .gallery{
     margin: 0 auto; 
     width: 90%;
@@ -266,7 +271,6 @@ main{
     gap: 1em;
     animation: spin 60s infinite linear;
     padding-right: 1em;
-
 }
 .card-carousel{
     flex: 0 0 7em;
@@ -282,32 +286,10 @@ main{
 .card-carousel img{
     height: 7em;
     border-radius: .1em;
-
 }
-/*.gallery{
-    width: 90%;  
-    background-color: var(--very-light-grey);
-    margin: 0 auto;
-    padding: 20px;
-    display: grid;
-    place-items: center;
-    border-radius: 6px;
-    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-    margin-bottom: 50px;
-    
-}*/
-/*.gallery--img-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);  
-    gap: 10px;                              
-    width: 100%;
-}*/
-/*.gallery--img-container img{
-    width: 100%;       
-    height: auto;      
-    display: block;
-    border-radius: 6px;
-} */
+/* =====================================
+CARDS 'POR QUÉ COMPRAR'
+===================================== */
 .main--why-buy{
     position: relative;
     width: 100%;
@@ -344,7 +326,6 @@ main{
     font-weight: 500;
     line-height: 1.8rem;
     color: var(--dark);
-
 }
 .detail-card{
     width: 90%;
@@ -370,10 +351,10 @@ main{
 .detail-card p{
     font-size: 1.2rem;
     font-weight: 500;
-    
-    
-
 }
+/* =====================================
+CONTENEDOR IMAGEN
+===================================== */
 .section-img-container{
     width: 100%;
     min-width: 320px;
@@ -391,6 +372,9 @@ main{
     line-height: 2.6rem;
     color: var(--white);
 }
+/* =====================================
+CARDS PLANES SUSCRIPCIÓN
+===================================== */
 .main-plans-container{
     width: 100%;
     min-width: 320px;
@@ -486,7 +470,6 @@ main{
     font-size: 1.5rem;
     font-weight: bold;
     line-height: 1.8rem;
-
 }
 .plan-card-button img{
     display: inline-block;
@@ -495,6 +478,9 @@ main{
     vertical-align: text-bottom;
     margin-left: 20px;
 }
+/* =====================================
+FOOTER
+===================================== */
 footer{
     display: flex;
     width: 100%;
@@ -528,7 +514,9 @@ footer .right img{
     height: auto;
     margin-bottom: 14px;
 }
-
+/* =====================================
+MEDIA QUERIES
+===================================== */
 @media (min-width: 930px) and (max-width: 1100px) {
     nav{
         height: 50px;
@@ -540,19 +528,32 @@ footer .right img{
     .navbar-left ul li a,
 .navbar-right ul li a{
     padding: 0;
-}
-    
-    .navbar-left ul li a:hover,
-    .navbar-right ul li a:hover{
-        font-size: 1.3rem;         
-        color: var(--light-green);
-        font-weight: bold;
-        padding: 0;
-        border: none;
-        border-radius: 0;
-
+    } 
+.navbar-left ul li a:hover,
+.navbar-right ul li a:hover{
+    font-size: 1.3rem;         
+    color: var(--light-green);
+    font-weight: bold;
+    padding: 0;
+    border: none;
+    border-radius: 0;
 }
 }
-
-
-
+/* =====================================
+exclusive.html
+===================================== */
+.hero-nobackground{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+}
+/* =====================================
+PRODUCT GRID (para todas las páginas)
+===================================== */
+/* =====================================
+CARRITO DE COMPRAS
+===================================== */
