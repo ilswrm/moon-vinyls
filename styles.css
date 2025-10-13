@@ -204,7 +204,6 @@ main{
     width: 100%;
     height: auto;
     padding-top: 0;
-    padding-bottom: 30px;
     text-align: center;
 }
 .main--gallery-container--title{
@@ -232,14 +231,11 @@ main{
     object-fit: cover;
     z-index: 0;
     display: block;   
-    
 }
 .backgroundVideo {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
-    
 }
 .main--gallery-container--title h2{
     margin-bottom: 30px;

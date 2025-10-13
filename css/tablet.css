@@ -34,6 +34,7 @@ body header img{
 }
 .backgroundVideo {
     display: block; /* ocultar en mobile */
+    height: 650px;
 }
 .img-container img {
     display: none;
