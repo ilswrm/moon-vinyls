@@ -50,10 +50,7 @@
 }
 .plans-container--slider{
     justify-content: center;
-
 }
-
-
 .cards-container{
     grid-template-columns: repeat(auto-fill, 320px);
 }
@@ -72,4 +69,13 @@
 }
 .product-info div p:nth-child(3){
     font-size: 1.4rem;
+}
+
+/* =====================================
+FOOTER
+===================================== */
+footer ul li a{
+    font-size: 1.5rem;
+    font-weight: 500;
+
 }
