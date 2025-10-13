@@ -249,7 +249,7 @@ CARRUSEL IMAGENES
 }
 .gallery{
     margin: 0 auto; 
-    width: 90%;
+    width: 100%;
     display: flex;
     overflow-x: auto;
 }
@@ -553,17 +553,17 @@ main {
 }
 .cards-container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 220px); /* móvil: 1 columna */
+    grid-template-columns: repeat(auto-fill, 300px); /* móvil: 1 columna */
     gap: 2rem;
     justify-content: center;
     padding-bottom: 100px;
 }
 .product-card{
-    width: 220px;
+    width: 300px;
 }
 .product-card img{
-    width: 220px;
-    height: 220px;
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -600,8 +600,7 @@ main {
     margin-bottom: 0;
     font-size: 1.2rem;
     color: var(--dark);
-}
-        
+}  
 /* =====================================
 CARRITO DE COMPRAS
 ===================================== */
