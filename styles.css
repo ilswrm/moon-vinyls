@@ -1,6 +1,12 @@
 /* =====================================
 RESET / VARIABLES / FUENTES
 ===================================== */
+@font-face {
+    font-family: 'Eurostile'; 
+    src: url('./assets/fonts/eurostile/eurostile.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 :root{
     --very-light-grey:#C7C7C7;
     --white:#FFFFFF;
@@ -8,6 +14,8 @@ RESET / VARIABLES / FUENTES
     --black:#000000;
     --dark:#232830;
     --light-green:#ACD9B2;
+    --h1:2.5rem;
+    --md: 1.2rem;
 }
 *{
     box-sizing: border-box;
@@ -16,7 +24,9 @@ RESET / VARIABLES / FUENTES
 }
 html{
     font-size: 62.5%;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Mozilla Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
 }
 /* =====================================
 HEADER / NAVBAR
@@ -150,14 +160,15 @@ HERO (solo index.html)
     align-self: center; 
 }
 .header--title-container h1{
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2.6rem;
+    font-family: "Eurostile", sans-serif;
+    font-size: var(--h1);
+    font-weight: 900;
+    line-height: 2.2rem;
     color: var(--black);
 }
 .header--title-container p{
     margin-top: 25px;
-    font-size: 1.4em;
+    font-size: var(--md);
     font-weight: 300;
     line-height: 1.6rem;
     color: var(--dark);
