@@ -1,0 +1,8 @@
+.header--title-container .header--button{
+    left: calc(50% - 134px);
+    top: 290px;
+    width: 260px;
+    height: 50px;
+    font-size: 2rem;
+    font-weight: 600;
+}

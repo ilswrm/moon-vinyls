@@ -23,17 +23,11 @@
     display: block; /* aparece en desktop */
 }
 .header--title-container .header--button{
+    left: calc(50% - 142px);
+    top: 270px;
     width: 280px;
     height: 54px;
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-.backgroundVideo {
-    display: block; /* ocultar en mobile */
-    height: 650px;
-}
-.img-container img {
-    display: none;
+    font-size: 2.2rem;
 }
 .card-carousel{
     flex: 0 0 10em;

@@ -14,8 +14,20 @@ RESET / VARIABLES / FUENTES
     --black:#000000;
     --dark:#232830;
     --light-green:#ACD9B2;
-    --h1:2.5rem;
-    --md: 1.2rem;
+    
+
+    --color-background: #F5F3EE;
+    --color-text: #0D0D0D;
+    --color-secondary-text: #4F6375;
+    --color-accent1: #B9A1D1;
+    --color-accent2: #6370A0;
+    --color-border: #C8C8C8;
+    --color-button-text: #FFFFFF;
+    --font-display: 'Eurostile', sans-serif;
+    --font-body: 'Mozilla Text', serif;
+    --h1:3.8rem;
+    --h2:3.6rem;
+    --md: 1.4rem;
 }
 *{
     box-sizing: border-box;
@@ -24,9 +36,10 @@ RESET / VARIABLES / FUENTES
 }
 html{
     font-size: 62.5%;
-    font-family: "Mozilla Text", sans-serif;
+    font-family: var(--font-body);
     font-optical-sizing: auto;
     font-weight: 300;
+    background-color: var(--color-background);
 }
 /* =====================================
 HEADER / NAVBAR
@@ -37,6 +50,7 @@ nav{
     align-items: center;
     padding: 10px 30px;
     height: 60px;
+    
 }
 .menu{
     display: block;
@@ -67,7 +81,7 @@ nav{
     top: 60px; /* altura del navbar */
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--color-background);
     padding: 30px 0;
     gap: 50px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -88,15 +102,16 @@ nav{
 .navbar-left ul li a,
 .navbar-right ul li a{
     text-decoration: none;
-    color: var(--dark);
-    font-weight: 600;
+    color: var(--color-text);
+    font-weight: 500;
     padding: 12px;
 }
 .navbar-left ul li a:hover,
 .navbar-right ul li a:hover{         
-    color: var(--light-green);
-    border: 2px solid var(--light-green);
-    font-weight: 600;
+    color: var(--color-background);
+    background-color: var(--color-border);
+    border: 2px solid var(--color-border);
+    font-weight: 500;
     padding: 10px;
     border-radius: 30px;
 }
@@ -115,7 +130,7 @@ nav{
 .navbar-user div{
     width: 14px;
     height: 14px;
-    background-color: var(--light-green);
+    background-color: var(--color-accent1);
     border-radius: 50%;
     font-size: var(--sm);
     font-weight: bold;
@@ -141,8 +156,7 @@ HERO (solo index.html)
     min-width: 320px;
     height: 334px;
     text-align: center;
-    background: #ACD9B2;
-    background: linear-gradient(0deg, rgba(172, 217, 178, 1) 0%, rgba(220, 255, 217, 1) 100%);
+    background: var(--color-background);
 }
 .hero img{
     height: auto;
@@ -160,11 +174,11 @@ HERO (solo index.html)
     align-self: center; 
 }
 .header--title-container h1{
-    font-family: "Eurostile", sans-serif;
+    font-family: var(--font-display);
     font-size: var(--h1);
     font-weight: 900;
-    line-height: 2.2rem;
-    color: var(--black);
+    line-height: 2.8rem;
+    color: var(--color-text);
 }
 .header--title-container p{
     margin-top: 25px;
@@ -176,7 +190,7 @@ HERO (solo index.html)
 .header--title-container .header--button{
     position: absolute;
     left: calc(50% - 118px);
-    top: 270px;
+    top: 320px;
     display: block;
     margin-top: 35px;
     padding: 15px;
@@ -186,22 +200,16 @@ HERO (solo index.html)
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     border: none;
     border-radius: 6px;
-    font-size: 1.4rem;
+    font-size: 2rem;
     text-decoration: none;
     color: var(--dark);
-    font-weight: 500;
+    font-weight: 700;
+    font-family: var(--font-display);
+    text-align: center;
     z-index: 1;
 }
-.header--button span{
-    display: inline-block;
-    width: 13px;
-    height: 12px;
-    margin-left: 50px;
-    background-image: url('./assets/logos/flechita.svg');
-    align-self: center;
-}
 /* =====================================
-CONTENEDOR IMAGEN/VIDEO HEADER
+CONTENEDOR IMAGEN HEADER
 ===================================== */
 main{
     width: 100%;
@@ -217,48 +225,49 @@ main{
     width: 90%;
     min-width: 288px;
     max-width: 900px;
-    margin: 0 auto;
-    margin-top: 30px;  
+    margin: 0 auto; 
 }
 .main--gallery-container .img-container {
-    position: relative;
     width: 100%;
     margin: 0 auto;
+    display: block;
 }
 .img-container{
     overflow: hidden;
 }
-.img-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-    display: block;   
-}
-.backgroundVideo {
-    width: 100%;
-    height: 100%;
+.backgroundImg {
+    margin-top: 120px;
+    transform: rotate(180deg);
+    width: 80%;
     object-fit: cover;
 }
 /* =====================================
 CARRUSEL IMAGENES
 ===================================== */
+.divider{
+    background-color: var(--color-accent1);
+    height: 40px;
+}
+.gallery-container{
+    background-color: var(--color-accent1);
+}
 .main--gallery-container--title h2{
-    margin-bottom: 30px;
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: 2.6rem;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    font-family: var(--font-display);
+    font-size: var(--h2);
+    font-weight: 600;
+    line-height: 3rem;
 }
 .main--gallery-container--title p{
-    margin-bottom: 20px;
-    font-size: 1.3rem;
-    line-height: 1.4rem;
+    font-size: var(--md);
+    line-height: 1.6rem;
     color: var(--dark);
+    padding: 10px 6px;
+    font-weight: 300;
 }
 .gallery{
+    background-color: var(--color-accent1);
     margin: 0 auto; 
     width: 100%;
     display: flex;
@@ -271,6 +280,7 @@ CARRUSEL IMAGENES
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
     gap: 1em;
     animation: spin 60s infinite linear;
     padding-right: 1em;
@@ -301,14 +311,7 @@ CARDS 'POR QUÉ COMPRAR'
     padding: 60px 10px;
     background-color: var(--very-light-grey);
 }
-.main--why-logo{
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    top: -40px;
-    left: calc(50% - 50px);
-}
+
 .why-buy__title{
     width: 90%;
     min-width: 288px;
