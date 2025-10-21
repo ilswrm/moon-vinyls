@@ -1,10 +1,8 @@
 .menu{
     display: none;
 }
-
-
     .navbar-left ul {
-        display: flex !important; /* menú siempre visible */
+        display: flex;
         flex-direction: row;
         position: static;
         width: auto;
