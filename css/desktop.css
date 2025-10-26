@@ -62,6 +62,16 @@
 .product-info div p:nth-child(3){
     font-size: 1.4rem;
 }
+/* =====================================
+FOOTER
+===================================== */
+.benefits{
+    grid-template-columns: repeat(4,1fr);
+}
+.trust-container{
+    padding: 6rem 8rem;
+
+}
 
 /* =====================================
 FOOTER

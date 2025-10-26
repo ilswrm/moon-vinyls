@@ -202,7 +202,7 @@ HERO (solo index.html)
     background-color: var(--text-input-field);
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     border: none;
-    border-radius: 6px;
+    border-radius: 3rem;
     font-size: 2rem;
     text-decoration: none;
     color: var(--dark);
@@ -298,7 +298,7 @@ CARRUSEL IMAGENES
     border-radius: .1em;
 }
 /* =====================================
-CARDS 'POR QUÉ COMPRAR'
+CARDS 'CONFIANZA Y POR QUE COMPRAR'
 ===================================== */
 .trust-container{
     padding: 4rem 1.5rem;
@@ -353,64 +353,6 @@ CARDS 'POR QUÉ COMPRAR'
     color: #777;
 }
 
-
-
-
-.main--why-buy{
-    position: relative;
-    width: 100%;
-    min-width: 320px;
-    height: auto;
-    padding: 60px 10px;
-    background-color: var(--very-light-grey);
-}
-
-.why-buy__title{
-    width: 90%;
-    min-width: 288px;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 40px;
-    text-align: center;
-}
-.why-buy__title h2{
-    margin-bottom: 20px;
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2.6rem;
-}
-.why-buy__title p{
-    margin-bottom: 20px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color: var(--dark);
-}
-.detail-card{
-    width: 90%;
-    min-width: 288px;
-    max-width: 400px;
-    min-height: 140px;
-    margin: 15px auto;
-    padding: 15px;
-    background-color: var(--text-input-field);
-    border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
-}
-.why-buy__cards-container .icons{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
-}
-.detail-card h3{
-    margin-bottom: 15px;
-    font-size: 1.6rem;
-}
-.detail-card p{
-    font-size: 1.2rem;
-    font-weight: 500;
-}
 /* =====================================
 CONTENEDOR IMAGEN
 ===================================== */
@@ -418,18 +360,43 @@ CONTENEDOR IMAGEN
     width: 100%;
     min-width: 320px;
     height: 60dvh;
-    background-image: url("./assets/img/vinyl_green.png");
+    background-image: url("./assets/img/vinyl-black-white.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
 }
 .section-img-container h2{
-    padding-top: 60px;
-    font-size: 2.4rem;
+    padding-top: 100px;
+    font-size: var(--h2);
     font-weight: bold;
-    line-height: 2.6rem;
+    line-height: 3.4rem;
     color: var(--white);
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.section-img-container .header--button{
+    align-self: center;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--text-input-field);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 700;
+    font-family: var(--font-display);
+    text-align: center;
+    z-index: 1;
 }
 /* =====================================
 CARDS PLANES SUSCRIPCIÓN

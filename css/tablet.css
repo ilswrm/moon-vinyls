@@ -6,3 +6,6 @@
     font-size: 2rem;
     font-weight: 600;
 }
+.benefits{
+    grid-template-columns: repeat(2, 1fr);
+}
